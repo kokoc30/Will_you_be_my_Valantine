@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VALENTINE'S DAY</title>
+    <link rel="icon" type="image/png" sizes="100%" href="https://cdn-icons-png.flaticon.com/512/9444/9444300.png">
+    <style>
+        body {
+            background: linear-gradient(to top, blue 0%, blue 50%, purple 55%, purple 100%);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            font-size: 42px;
+            font-family: Koko, Jam;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 35%;
+        }
+
+        #Button1,
+        #Button2 {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #Button1 {
+            position: fixed;
+            top: 70%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+
+        #Button2 {
+            position: absolute;
+            left: 39%;
+            top: 68%;
+        }
+    </style>
+</head>
+<body>
+  
+    <p>Hey bezzzzz! I'd love to spend Feb 14th with you, let's create some special memories together.<br> Will you be my Valentine?</p>
+    <img src="https://media.tenor.com/H11joqKlLhcAAAAi/teagif-cute.gif">
+    <button id="Button1">Yes!</button>
+    <button id="Button2">No</button>
+    <script>
+        const Button2 = document.getElementById('Button2');
+        let left = 40;
+        Button2.addEventListener('mouseover', function() {
+            if(left == 40){
+                left = 48;
+            }else{
+                left = 40;
+            }
+            this.style.left = left + '%';
+        });
+        document.getElementById('Button1').addEventListener('click', function() {
+            alert('YIIIIIIIII THANKSSS! I LOVE YOU <3❤❤❤ ');
+        });
+    </script>
+</body>
+</html>
